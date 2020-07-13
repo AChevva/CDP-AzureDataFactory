@@ -4,16 +4,25 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
+  branches:
+    include:
+    - adf-publish    
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'vs2017-win2016'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- task: CopyFiles@2
+  displayName: Copy artifacts to stage location for develop branch
+  inputs:
+    SourceFolder: '$(system.defaultworkingdirectory)'
+    Contents: '**/ADF_Publish/CDPData-adf-SBPOC/**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
+    OverWrite: true
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+
+- task: PublishBuildArtifacts@1
+  displayName: Publishing artifacts for CDPData-adf-SBPOC  
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/CDPData-adf-SBPOC'
+    ArtifactName: 'CDPData-adf-SBPOC'
