@@ -1,2 +1,2 @@
 # CDP-AzureDataFactory
-This is to test Github &amp; ADF integration
+This setup is to test Github and ADF integration
