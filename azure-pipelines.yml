@@ -6,7 +6,10 @@
 trigger:
   branches:
     include:
-    - adf_publish    
+    - adf_publish
+  paths:
+    include:
+    - ADF_Publish/*
 
 pool:
   vmImage: 'vs2017-win2016'
