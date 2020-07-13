@@ -6,7 +6,10 @@
 trigger:
   branches:
     include:
-    - adf-publish    
+    - adf_publish
+  paths:
+    include:
+    - CDPData-adf-SBPOC/*
 
 pool:
   vmImage: 'vs2017-win2016'
@@ -16,7 +19,7 @@ steps:
   displayName: Copy artifacts to stage location for develop branch
   inputs:
     SourceFolder: '$(system.defaultworkingdirectory)'
-    Contents: '**/ADF_Publish/CDPData-adf-SBPOC/**'
+    Contents: '**/CDPData-adf-SBPOC/**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
     OverWrite: true
 
