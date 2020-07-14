@@ -191,6 +191,46 @@
 			]
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/FirstTrigger')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"description": "This is to test if we can trigger this via Azure devops Power Shell",
+				"annotations": [],
+				"runtimeState": "Started",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "Pipeline 2",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "ScheduleTrigger",
+				"typeProperties": {
+					"recurrence": {
+						"frequency": "Day",
+						"interval": 1,
+						"startTime": "2020-07-14T18:48:00.000Z",
+						"endTime": "2020-07-15T18:48:00.000Z",
+						"timeZone": "UTC",
+						"schedule": {
+							"minutes": [
+								30
+							],
+							"hours": [
+								7
+							]
+						}
+					}
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/Pipeline 2')]"
+			]
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/BLOB to SQL')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
