@@ -2,7 +2,7 @@
 	"name": "CarsTable",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureSqlDatabase",
+			"referenceName": "OutputSql",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -37,7 +37,7 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "PreTripItinerarySample"
+			"table": "Cars"
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
