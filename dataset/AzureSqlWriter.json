@@ -1,0 +1,73 @@
+{
+	"name": "AzureSqlWriter",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Reservation_Id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Stay_Day",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Breakfast_DT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Breakfast_Reservation_Already_Made",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Breakfast_Suggestion_Text",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Breakfast_Reservation_URL",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Lunch_DT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Lunch_Reservation_Already_Made",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Lunch_Suggestion_Text",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Lunch_Reservation_URL",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Dinner_DT",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Dinner_Reservation_Already_Made",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Dinner_Suggestion_Text",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Dinner_Reservation_URL",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "PreTripItinerarySample"
+		}
+	}
+}
