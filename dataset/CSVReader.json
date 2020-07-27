@@ -1,0 +1,80 @@
+{
+	"name": "CSVReader",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "BlobReader",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Sample_File-Pre_Trip_Itinerary.csv",
+				"container": "cdpdata-aci-sbpoc"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Reservation_Id",
+				"type": "String"
+			},
+			{
+				"name": "Stay_Day",
+				"type": "String"
+			},
+			{
+				"name": "Breakfast_DT",
+				"type": "String"
+			},
+			{
+				"name": "Breakfast_Reservation_Already_Made",
+				"type": "String"
+			},
+			{
+				"name": "Breakfast_Suggestion_Text",
+				"type": "String"
+			},
+			{
+				"name": "Breakfast_Reservation_URL",
+				"type": "String"
+			},
+			{
+				"name": "Lunch_DT",
+				"type": "String"
+			},
+			{
+				"name": "Lunch_Reservation_Already_Made",
+				"type": "String"
+			},
+			{
+				"name": "Lunch_Suggestion_Text",
+				"type": "String"
+			},
+			{
+				"name": "Lunch_Reservation_URL",
+				"type": "String"
+			},
+			{
+				"name": "Dinner_DT",
+				"type": "String"
+			},
+			{
+				"name": "Dinner_Reservation_Already_Made",
+				"type": "String"
+			},
+			{
+				"name": "Dinner_Suggestion_Text",
+				"type": "String"
+			},
+			{
+				"name": "Dinner_Reservation_URL",
+				"type": "String"
+			}
+		]
+	}
+}
