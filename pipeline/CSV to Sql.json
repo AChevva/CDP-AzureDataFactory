@@ -28,7 +28,6 @@
 					"sink": {
 						"type": "AzureSqlSink",
 						"preCopyScript": "delete from dbo.PreTripItinerarySample",
-						"tableOption": "autoCreate",
 						"disableMetricsCollection": false
 					},
 					"enableStaging": false,
