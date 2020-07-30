@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "CustomerFile.csv",
+				"fileName": "CustomerTransAggs.csv",
 				"container": "cdpdata-aci-sbpoc"
 			},
 			"columnDelimiter": ",",
