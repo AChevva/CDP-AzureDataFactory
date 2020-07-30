@@ -67,7 +67,7 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "PreTripItinerarySample"
+			"table": "CustomerFile"
 		}
 	}
 }
