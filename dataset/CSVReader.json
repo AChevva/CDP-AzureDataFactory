@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "Sample_File-Pre_Trip_Itinerary.csv",
+				"fileName": "AmperityDataset.csv",
 				"container": "cdpdata-aci-sbpoc"
 			},
 			"columnDelimiter": ",",
@@ -20,59 +20,243 @@
 		},
 		"schema": [
 			{
-				"name": "Reservation_Id",
+				"name": "amperity_id",
 				"type": "String"
 			},
 			{
-				"name": "Stay_Day",
+				"name": "datasource",
 				"type": "String"
 			},
 			{
-				"name": "Breakfast_DT",
+				"name": "has_blv",
 				"type": "String"
 			},
 			{
-				"name": "Breakfast_Reservation_Already_Made",
+				"name": "is_supersized",
 				"type": "String"
 			},
 			{
-				"name": "Breakfast_Suggestion_Text",
+				"name": "supersized_id",
 				"type": "String"
 			},
 			{
-				"name": "Breakfast_Reservation_URL",
+				"name": "component_id",
 				"type": "String"
 			},
 			{
-				"name": "Lunch_DT",
+				"name": "given_name",
 				"type": "String"
 			},
 			{
-				"name": "Lunch_Reservation_Already_Made",
+				"name": "surname",
 				"type": "String"
 			},
 			{
-				"name": "Lunch_Suggestion_Text",
+				"name": "full_name",
 				"type": "String"
 			},
 			{
-				"name": "Lunch_Reservation_URL",
+				"name": "email",
 				"type": "String"
 			},
 			{
-				"name": "Dinner_DT",
+				"name": "phone",
 				"type": "String"
 			},
 			{
-				"name": "Dinner_Reservation_Already_Made",
+				"name": "address",
 				"type": "String"
 			},
 			{
-				"name": "Dinner_Suggestion_Text",
+				"name": "address2",
 				"type": "String"
 			},
 			{
-				"name": "Dinner_Reservation_URL",
+				"name": "city",
+				"type": "String"
+			},
+			{
+				"name": "state",
+				"type": "String"
+			},
+			{
+				"name": "postal",
+				"type": "String"
+			},
+			{
+				"name": "country",
+				"type": "String"
+			},
+			{
+				"name": "birthdate",
+				"type": "String"
+			},
+			{
+				"name": "gender",
+				"type": "String"
+			},
+			{
+				"name": "address1",
+				"type": "String"
+			},
+			{
+				"name": "an_add_datetime",
+				"type": "String"
+			},
+			{
+				"name": "an_upd_datetime",
+				"type": "String"
+			},
+			{
+				"name": "company",
+				"type": "String"
+			},
+			{
+				"name": "email_1",
+				"type": "String"
+			},
+			{
+				"name": "email_alt",
+				"type": "String"
+			},
+			{
+				"name": "hem_insert_date",
+				"type": "String"
+			},
+			{
+				"name": "hem_primary_yn",
+				"type": "String"
+			},
+			{
+				"name": "hem_update_date",
+				"type": "String"
+			},
+			{
+				"name": "hn_update_date",
+				"type": "String"
+			},
+			{
+				"name": "hna_insert_date",
+				"type": "String"
+			},
+			{
+				"name": "hna_primary_yn",
+				"type": "String"
+			},
+			{
+				"name": "hna_update_date",
+				"type": "String"
+			},
+			{
+				"name": "hph_insert_date",
+				"type": "String"
+			},
+			{
+				"name": "hph_primary_yn",
+				"type": "String"
+			},
+			{
+				"name": "hph_update_date",
+				"type": "String"
+			},
+			{
+				"name": "job_title",
+				"type": "String"
+			},
+			{
+				"name": "middle_name_ptr",
+				"type": "String"
+			},
+			{
+				"name": "p_xlastupdated",
+				"type": "String"
+			},
+			{
+				"name": "pa_bad",
+				"type": "String"
+			},
+			{
+				"name": "pa_mailing",
+				"type": "String"
+			},
+			{
+				"name": "pa_xlastupdated",
+				"type": "String"
+			},
+			{
+				"name": "pem_defaultemail",
+				"type": "String"
+			},
+			{
+				"name": "pem_xlastupdated",
+				"type": "String"
+			},
+			{
+				"name": "phone_1",
+				"type": "String"
+			},
+			{
+				"name": "phone_work",
+				"type": "String"
+			},
+			{
+				"name": "pn_ispreferredname",
+				"type": "String"
+			},
+			{
+				"name": "pph_preferred",
+				"type": "String"
+			},
+			{
+				"name": "pph_xlastupdated",
+				"type": "String"
+			},
+			{
+				"name": "suffix_ptr",
+				"type": "String"
+			},
+			{
+				"name": "title",
+				"type": "String"
+			},
+			{
+				"name": "ck",
+				"type": "String"
+			},
+			{
+				"name": "fk_cust_name_id",
+				"type": "String"
+			},
+			{
+				"name": "fk_name_id",
+				"type": "String"
+			},
+			{
+				"name": "fk_player_id",
+				"type": "String"
+			},
+			{
+				"name": "blv_address",
+				"type": "String"
+			},
+			{
+				"name": "blv_email",
+				"type": "String"
+			},
+			{
+				"name": "blv_given_name",
+				"type": "String"
+			},
+			{
+				"name": "blv_phone",
+				"type": "String"
+			},
+			{
+				"name": "blv_surname",
+				"type": "String"
+			},
+			{
+				"name": "pk",
 				"type": "String"
 			}
 		]
